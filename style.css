@@ -142,7 +142,6 @@ color: aliceblue;
 
 @media(max-width:570px) {
   .container {
-    display: grid!important;
     justify-content: center;
     height: auto;
 }

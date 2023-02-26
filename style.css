@@ -13,9 +13,11 @@ body {
   width: 90vw;
   max-width: 34em;
   position: absolute;
+  display: grid;
+  justify-content: center;
   transform: translate(-50%, -50%);
   top: 50%;
-  left: 50%;
+  left: 51%;
   padding: 3em;
   border-radius: 20px;
   box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
@@ -26,8 +28,8 @@ body {
 }
 #options-container div {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: grid 1fr 1fr;
+  justify-content: space-around;
   margin: 1.2em 0 2.4em 0;
 }
 #options-container button {
@@ -47,7 +49,8 @@ body {
   background-color: #f4c531;
   border: 3px solid #000000;
   color: #000000;
-  display: grid;
+  display: grid 1fr 1fr;
+  justify-content: space-around;
 }
 .letter-container {
   width: 100%;
@@ -117,6 +120,9 @@ canvas {
 }
 #canvas {
   background: #efefef;
+  width: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 /* copy bottom */
@@ -138,11 +144,4 @@ color: aliceblue;
 .footer a:hover {  
   color:yellow;
   letter-spacing: 1px;
-}
-
-@media(max-width:570px) {
-  .container {
-    justify-content: center;
-    height: auto;
-}
 }
